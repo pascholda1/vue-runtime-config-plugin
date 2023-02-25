@@ -1,18 +1,5 @@
 module.exports = function(grunt) {
   grunt.initConfig({
-    vueify: {
-      components: {
-        files: [
-          {
-            expand: true,
-            cwd: 'src',
-            src: 'components/**/*.vue',
-            dest: 'dist/',
-            ext: '.vue.js',
-          },
-        ],
-      },
-    },
     babel: {
       options: {
         sourceMap: false,
@@ -33,7 +20,6 @@ module.exports = function(grunt) {
     },
   });
 
-  grunt.loadNpmTasks('grunt-vueify');
   grunt.loadNpmTasks('grunt-babel');
 
   grunt.registerTask('default', ['vueify', 'babel']);
