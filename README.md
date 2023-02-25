@@ -74,7 +74,7 @@ Vue.use(vueRuntimeConfigPlugin)
 
 ````
 
-### Access the configuration Object / Switch environment while runtime
+### Access the configuration Object / Switch environment at runtime
 
 ````vue
 
