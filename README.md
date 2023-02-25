@@ -57,7 +57,7 @@ Vue.use(vueRuntimeConfigPlugin)
 
 (async () => {
 
-  // fetch the config files from /config
+  // fetch the config files from /my/config/path
   const config = await vueRuntimeConfigPlugin.loadEnvironment({
     environment: process.env.NODE_ENV,
     forceFetch: true
