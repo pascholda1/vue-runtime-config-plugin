@@ -1,5 +1,9 @@
 # @pascholda1/vue-runtime-config-plugin
 
+A VueJS plugin to read JSON config files per environment at runtime.
+
+Works with Vue2. Vue3 support coming soon.
+
 ## Installation
 
 ```shell
