@@ -116,7 +116,6 @@ eg. `development.config.json`
 the environment config will be merged into the default config which will be merged into the static config which was
 passed to the constructor.
 
-If you use nested configurations in your file the plugin will overwrite the whole first level Object. You can not
-overwrite single nested keys.
+If you use nested configurations in your file the plugin will overwrite the whole first level Object. 
 
 
