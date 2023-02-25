@@ -89,6 +89,9 @@ export default {
       await this.$vueRuntimeConfigPlugin.loadEnvironment({
         environment
       });
+
+      // Note that the $config object is NOT reactive
+      await this.$forceUpdate()
     }
   }
 };
