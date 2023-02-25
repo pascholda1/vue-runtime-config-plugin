@@ -103,3 +103,16 @@ export default {
 
 
 ````
+
+### Config Files and Config merging
+
+Your config directory should contain min. two Files. The `default.config.json` and the one for each environment
+eg. `development.config.json`
+
+the environment config will be merged into the default config which will be merged into the static config which was
+passed to the constructor.
+
+If you use nested configurations in your file the plugin will overwrite the whole first level Object. You can not
+overwrite single nested keys.
+
+
