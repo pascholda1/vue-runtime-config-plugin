@@ -21,10 +21,12 @@ Vue.use(vueRuntimeConfigPlugin)
 (async () => {
 
   // fetch the config files from /config
-  await vueRuntimeConfigPlugin.loadEnvironment({
+  const config = await vueRuntimeConfigPlugin.loadEnvironment({
     environment: process.env.NODE_ENV,
     forceFetch: false
   });
+
+  console.log(config)
 
   // init App
   new Vue({
@@ -53,10 +55,12 @@ Vue.use(vueRuntimeConfigPlugin)
 (async () => {
 
   // fetch the config files from /config
-  await vueRuntimeConfigPlugin.loadEnvironment({
+  const config = await vueRuntimeConfigPlugin.loadEnvironment({
     environment: process.env.NODE_ENV,
     forceFetch: false
   });
+
+  console.log(config)
 
   // init App
   new Vue({
