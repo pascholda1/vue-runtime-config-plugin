@@ -22,5 +22,5 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-babel');
 
-  grunt.registerTask('default', ['vueify', 'babel']);
+  grunt.registerTask('default', ['babel']);
 };
