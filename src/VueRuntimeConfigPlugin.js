@@ -2,7 +2,7 @@ const DEFAULT_ENVIRONMENT = 'production';
 const DEFAULT_CONFIG_PATH = '/config';
 
 export class VueRuntimeConfigPlugin {
-  vue = null;
+  app = null;
 
   configPath = DEFAULT_CONFIG_PATH;
   environment = DEFAULT_ENVIRONMENT;
@@ -78,19 +78,19 @@ export class VueRuntimeConfigPlugin {
     : this.config[this.environment]
         ??= await this.#privateLoadConfigFile(this.environmentConfigUri);
 
-    if (this.vue) {
-      this.install(this.vue);
+    if (this.app) {
+      this.install(this.app);
     }
 
     return this.$runtimeConfig;
   }
 
-  install(Vue) {
+  install(app) {
 
-    this.vue = Vue;
+    this.app = app;
 
-    Vue.prototype.$config = this.$runtimeConfig;
-    Vue.prototype.$vueRuntimeConfigPlugin = this;
+    app.config.globalProperties.$config = this.$runtimeConfig;
+    app.config.globalProperties.$vueRuntimeConfigPlugin = this;
   }
 
 }
