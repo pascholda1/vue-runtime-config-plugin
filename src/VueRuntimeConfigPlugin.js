@@ -10,11 +10,11 @@ export class VueRuntimeConfigPlugin {
   config = {};
 
   get defaultConfigUri() {
-    return `${this.configPath}/default.config.json`;
+    return `${this.configPath}/default.config.json?ts=${+new Date()}`;
   }
 
   get environmentConfigUri() {
-    return `${this.configPath}/${this.environment}.config.json`;
+    return `${this.configPath}/${this.environment}.config.json?ts=${+new Date()}`;
   }
 
   get $runtimeConfig() {

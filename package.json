@@ -1,24 +1,24 @@
 {
-	"name": "@pascholda1/vue-runtime-config-plugin",
-	"version": "3.0.0",
-	"description": "A VueJS plugin to read JSON config files per environment at runtime.",
-	"main": "src/VueRuntimeConfigPlugin.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/pascholda1/vue-runtime-config-plugin.git"
-	},
-	"keywords": [
-		"vuejs",
-		"config",
-		"plugin"
-	],
-	"author": "Simon Paschold <dev@k0815.rocks>",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/pascholda1/vue-runtime-config-plugin/issues"
-	},
-	"homepage": "https://github.com/pascholda1/vue-runtime-config-plugin#readme"
+  "name": "@pascholda1/vue-runtime-config-plugin",
+  "version": "3.0.0",
+  "description": "A VueJS plugin to read JSON config files per environment at runtime.",
+  "main": "src/VueRuntimeConfigPlugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pascholda1/vue-runtime-config-plugin.git"
+  },
+  "keywords": [
+    "vuejs",
+    "config",
+    "plugin"
+  ],
+  "author": "Simon Paschold <dev@k0815.rocks>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pascholda1/vue-runtime-config-plugin/issues"
+  },
+  "homepage": "https://github.com/pascholda1/vue-runtime-config-plugin#readme"
 }
